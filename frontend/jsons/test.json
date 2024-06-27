@@ -1,0 +1,43 @@
+{
+  "nodes":
+    [
+      {
+        "id": "1",
+        "label": "sw-1",
+        "hostname": "sw-1",
+        "name": "switch-1",
+        "mac": "18:F3:74:EE:EF:EF",
+        "type": "Mikrotik",
+        "isRoot": false,
+        "rootIfaceDesc": "none",
+        "location": "Classroom #123",
+        "note": "Requires software update"
+      },
+      {
+        "id": "2",
+        "label": "sw-2",
+        "hostname": "sw-2",
+        "name": "switch-2",
+        "mac": "18:F3:74:EE:EF:EE",
+        "type": "Mikrotik",
+        "isRoot": false,
+        "rootIfaceDesc": "none",
+        "location": "Classroom #321",
+        "note": "Bought in 2021"
+      }
+    ],
+  "edges":
+  [
+    {
+      "id": "1",
+      "from": "1",
+      "to": "2",
+      "hostname1": "sw-1",
+      "hostname2": "sw-2",
+      "mac1": "18:F3:74:EE:EF:EF",
+      "mac2": "18:F3:74:EE:EF:EE",
+      "iface1": "sw-1",
+      "iface2": "sw-2"
+    }
+  ]
+}
